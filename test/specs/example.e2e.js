@@ -5,7 +5,7 @@ describe('My Login application', () => {
     it('should login with valid credentials', async () => {
         await LoginPage.open();
 
-        await LoginPage.login('IT', '%pb4p@4UeYUH$LlIET#Ipzf1');
+        await LoginPage.login('##HERE##', '##HERE##');
         await expect(SecurePage.flashAlert).toBeExisting();
         await expect(SecurePage.flashAlert).toHaveTextContaining(
             'IT');
